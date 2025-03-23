@@ -18,7 +18,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
-    specPattern: 'cypress/integration/GreenKart/*.js'
+    specPattern: 'cypress/integration/examples/*.js'
 
   },
 });

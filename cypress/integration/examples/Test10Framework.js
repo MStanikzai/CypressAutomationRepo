@@ -1,5 +1,3 @@
-/// <reference types = "Cypress" />
-
 import HomePage from "../../support/pageObjects/HomePage"
 
 describe('End to End ecommerce Test', function () {
@@ -16,7 +14,8 @@ describe('End to End ecommerce Test', function () {
 
     it('Submit Order', function () {
 // Cypress.config('defaultCommandTimeout', 6000)
- cy.visit(Cypress.env('url') + "/loginpagePractise/#");
+
+    this.homePage.goTo(Cypress.env('url') + "/loginpagePractise/#");
         const productName = this.data.productName
 
        cy.log(this.data.username)
